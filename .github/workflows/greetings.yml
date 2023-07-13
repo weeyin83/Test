@@ -1,0 +1,16 @@
+name: Variable Test
+ 
+on:
+  push:
+    branches:
+    - main
+ 
+env:
+  example_value: value1_sarah
+ 
+jobs:
+  display_values:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Test to display example_value environment variable" 
+        run: echo "example_value value is $example_value"
