@@ -1,0 +1,18 @@
+name: Specific step - example environment variable
+ 
+on:
+  push:
+    branches:
+    - main
+ 
+jobs:
+  display_values:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: “Step 1”
+        run: echo "This is step 1. The environment variable for this example is $input_value."
+      - name: “Step 2”
+        run: echo "This is step 2. The environment variable for this example is $input_value."
+        env:
+          input_value: env-variable-specific-step
