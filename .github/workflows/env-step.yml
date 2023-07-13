@@ -6,7 +6,7 @@ on:
     - main
  
 jobs:
-  display_values:
+   environment_variables_examples:
     runs-on: ubuntu-latest
 
     steps:
